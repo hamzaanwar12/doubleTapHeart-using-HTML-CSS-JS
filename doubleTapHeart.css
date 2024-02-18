@@ -1,0 +1,46 @@
+body{
+    background-color: darkslategrey;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.container{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    height: 70vh;
+    margin: auto;
+}
+.container>div{
+    width: 100%;
+    height: 65vh;
+    background: url("car.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 4px 4px #00000036;
+}
+
+
+i{
+    position: absolute;
+    color: red;
+    overflow: hidden;
+}
+.fa-heart{
+    position: absolute;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    animation: doubleHeart 0.7s forwards;
+}
+@keyframes doubleHeart{
+    to{
+        transform: translate(-50%,-50%) scale(10);
+        opacity: 0;
+    }
+}
